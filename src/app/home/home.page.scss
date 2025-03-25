@@ -30,4 +30,8 @@
   font-family: "Borel", cursive;
   font-weight: 400;
   font-style: normal;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
