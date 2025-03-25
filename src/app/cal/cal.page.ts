@@ -192,7 +192,7 @@ export class CalPage implements OnInit {
   }
   onSignUp() {
     this.authService.logout();
-    this.router.navigateByUrl("sign");
+    this.router.navigateByUrl("register");
   }
 }
 
