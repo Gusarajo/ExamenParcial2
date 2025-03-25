@@ -3,9 +3,15 @@ import { Firestore, collection, addDoc, updateDoc, deleteDoc, doc, collectionDat
 import { Observable } from 'rxjs';
 export interface Task {
   id?: string;
-  Chiste: string;
-  Tipo: string;
-  Explicacion: string;
+  Nombre: string;
+  Apellido: string;
+  Matricula: string;
+  Correo: string;
+  DAMM: string;
+  OCA: string;
+  PMP: string;
+  MATE: string;
+  M3D: string;
 }
 
 @Injectable({
