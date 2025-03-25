@@ -6,20 +6,49 @@
 
 <ion-content [fullscreen]="true">
   <h1 style="text-align: center; font-size: 60px;">Agrega tu Chiste</h1>
-
   <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
-    <input id="Nombre" name="Nombre" [(ngModel)]="ChisteInput"
+
+    <!-- //nombre -->
+    <input id="Nombre" name="Nombre" [(ngModel)]="NombreInput"
       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-      placeholder="Escribe tu chiste" required #Nombre="ngModel" />
-    <input id="Descripcion" name="Descripcion" [(ngModel)]="TipoInput"
+      placeholder="Escribe tu Nomrbre" required #Nombre="ngModel" />
+<!-- //Apellido -->
+    <input id="Apellido" name="Apellido" [(ngModel)]="ApellidoInput"
       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-      placeholder="Familiar, negro, etc." required #Descripcion="ngModel" />
-    <input  id="date" name="date" [(ngModel)]="ExplicacionInput"
+      placeholder="Escribe tu apellido" required #Descripcion="ngModel" />
+<!-- //Matricula -->
+    <input  id="Matricula" name="Matricula" [(ngModel)]="MatriculaInput"
       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-      placeholder="Explica para los que no lo entendieron" required #date="ngModel" />
+      placeholder="Escribe tu Matricula" required #date="ngModel" />
+<!-- {}Correo -->
+      <input  id="Correo" name="Correo" [(ngModel)]="CoreoInput"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Escribe aque tu correo electronico" required #date="ngModel" />
+<!-- DAMM -->
+<input  id="DAMM" name="DAMM" [(ngModel)]="DAMMInput"
+class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+placeholder="Escribe la calificacion de DAMM" required #date="ngModel" />
+ <!-- OCA -->
+ <input  id="OCA" name="OCA" [(ngModel)]="OCAInput"
+ class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+ placeholder="Escribe la calificacion de OCA" required #date="ngModel" />
+  <!-- MATE -->
+  <input  id="MATE" name="MATE" [(ngModel)]="MATEInput"
+  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+  placeholder="Escribe la calificacion de MATE" required #date="ngModel" />
+  <!-- PMP -->
+  <input  id="PMP" name="MATE" [(ngModel)]="PMPInput"
+  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+  placeholder="Escribe la calificacion de PMP" required #date="ngModel" />
+  <!-- M3D -->
+  <input  id="M3D" name="M3D" [(ngModel)]="M3DInput"
+  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+  placeholder="Escribe la calificacion de M3D" required #date="ngModel" />
+
     <button type="submit"
       class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
       [disabled]="registerForm.invalid">
+
       Agregar Chiste
     </button>
   </form>
