@@ -156,7 +156,7 @@ export class CalPage implements OnInit {
         {
           text: 'Guardar',
           handler: (data) => {
-            if (data.Chiste && data.Tipo && data.Explicacion) {
+            if (data.Nombre && data.Apellido && data.Matricula && data.Correo && data.DAMM && data.OCA && data.PMP && data.MATE && data.M3D) {
               const updatedTask: Partial<Task> = {
                 Nombre: data.Nombre,
                 Apellido: data.Apellido,
